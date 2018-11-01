@@ -18,9 +18,13 @@
 
     <!-- <app-select></app-select> -->
 
-    <app-cascader></app-cascader>
+    <!-- <app-cascader></app-cascader> -->
 
+    <!-- <app-switch></app-switch> -->
 
+    <!-- <app-slider></app-slider> -->
+
+    <time-picker></time-picker>
 
     <!-- 替换测试 -->
     <!-- <app-find></app-find> -->
@@ -34,6 +38,9 @@ import AppInput from './components/Input'
 import InputNumber from './components/InputNumber'
 import AppSelect from './components/Select'
 import AppCascader from './components/Cascader'
+import AppSwitch from './components/Switch'
+import AppSlider from './components/Slider'
+import TimePicker from './components/TimePicker'
 
 
 import Find from './components/Find'
@@ -51,6 +58,9 @@ export default {
     InputNumber: InputNumber,
     AppSelect: AppSelect,
     AppCascader: AppCascader,
+    AppSwitch: AppSwitch,
+    AppSlider: AppSlider,
+    TimePicker: TimePicker,
     appFind: Find
   }
 };
