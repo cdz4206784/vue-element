@@ -1,6 +1,6 @@
 <template>
     <div id="app-timepicker">
-        TimePicker
+        http://element-cn.eleme.io/#/zh-CN/component/time-picker
     </div>
 </template>
 
