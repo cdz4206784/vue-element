@@ -18,8 +18,17 @@
 
     <!-- <app-select></app-select> -->
 
-    <app-cascader></app-cascader>
+    <!-- <app-cascader></app-cascader> -->
 
+    <!-- <time-picker></time-picker> -->
+
+    <!-- <app-date-picker></app-date-picker> -->
+
+    <!-- <date-time-picker></date-time-picker> -->
+
+    <!-- <app-upload></app-upload> -->
+
+    <app-rate></app-rate>
 
 
     <!-- 替换测试 -->
@@ -34,6 +43,11 @@ import AppInput from './components/Input'
 import InputNumber from './components/InputNumber'
 import AppSelect from './components/Select'
 import AppCascader from './components/Cascader'
+import TimePicker from './components/TimePicker'
+import AppDatePicker from './components/DatePicker'
+import DateTimePicker from './components/DateTimePicker'
+import AppUpload from './components/Upload'
+import AppRate from './components/Rate'
 
 
 import Find from './components/Find'
@@ -51,6 +65,14 @@ export default {
     InputNumber: InputNumber,
     AppSelect: AppSelect,
     AppCascader: AppCascader,
+    TimePicker: TimePicker,
+    AppDatePicker: AppDatePicker,
+    DateTimePicker: DateTimePicker,
+    AppUpload: AppUpload,
+    AppRate: AppRate,
+
+
+
     appFind: Find
   }
 };
