@@ -38,10 +38,6 @@
         name: 'app-rate',
         data(){
             return {
-                
-            }
-        }
-    }    
                 value1: null,
                 value2: null,
                 value3: null,
