@@ -25,6 +25,12 @@
     <!-- <app-slider></app-slider> -->
 
     <!-- <time-picker></time-picker> -->
+    
+    <!-- <app-date-picker></app-date-picker> -->
+
+    <!-- <date-time-picker></date-time-picker> -->
+
+    <!-- <app-upload></app-upload> -->
 
     <!-- <app-rate></app-rate> -->
 
@@ -32,18 +38,7 @@
 
     <!-- <app-transfer></app-transfer> -->
 
-    <!-- <app-form></app-form> -->
-
-
-    <!-- <time-picker></time-picker> -->
-
-    <!-- <app-date-picker></app-date-picker> -->
-
-    <!-- <date-time-picker></date-time-picker> -->
-
-    <!-- <app-upload></app-upload> -->
-
-    <app-rate></app-rate>
+    <app-form></app-form>
 
 
     <!-- 替换测试 -->
@@ -52,33 +47,28 @@
 </template>
 
 <script>
-import Layout from './components/Layout'
-import Container from './components/Container'
-import AppInput from './components/Input'
-import InputNumber from './components/InputNumber'
-import AppSelect from './components/Select'
-import AppCascader from './components/Cascader'
-import TimePicker from './components/TimePicker'
-import AppDatePicker from './components/DatePicker'
-import DateTimePicker from './components/DateTimePicker'
-import AppUpload from './components/Upload'
-import AppRate from './components/Rate'
-import AppSwitch from './components/Switch'
-import AppSlider from './components/Slider'
-import TimePicker from './components/TimePicker'
-import AppRate from './components/Rate'
-import ColorPicker from './components/ColorPicker'
-import AppTransfer from './components/Transfer'
-import AppForm from './components/Form'
+import Layout from "./components/Layout";
+import Container from "./components/Container";
+import AppInput from "./components/Input";
+import InputNumber from "./components/InputNumber";
+import AppSelect from "./components/Select";
+import AppCascader from "./components/Cascader";
+import TimePicker from "./components/TimePicker";
+import AppDatePicker from "./components/DatePicker";
+import DateTimePicker from "./components/DateTimePicker";
+import AppUpload from "./components/Upload";
+import AppRate from "./components/Rate";
+import AppSwitch from "./components/Switch";
+import AppSlider from "./components/Slider";
+import ColorPicker from "./components/ColorPicker";
+import AppTransfer from "./components/Transfer";
+import AppForm from "./components/Form";
 
-
-import Find from './components/Find'
+import Find from "./components/Find";
 export default {
   name: "App",
   data() {
-    return {
-      
-    }
+    return {};
   },
   components: {
     layoutDemo: Layout,
@@ -92,15 +82,11 @@ export default {
     DateTimePicker: DateTimePicker,
     AppUpload: AppUpload,
     AppRate: AppRate,
-
     AppSwitch: AppSwitch,
     AppSlider: AppSlider,
-    TimePicker: TimePicker,
-    AppRate: AppRate,
     ColorPicker: ColorPicker,
     AppTransfer: AppTransfer,
     AppForm: AppForm,
-
 
     appFind: Find
   }
@@ -108,5 +94,4 @@ export default {
 </script>
 
 <style>
-
 </style>
