@@ -22,6 +22,8 @@
         </el-row>
 
 
+    <div id="app-timepicker">
+        http://element-cn.eleme.io/#/zh-CN/component/time-picker
     </div>
 </template>
 
@@ -61,3 +63,4 @@
 <style>
 
 </style>
+

@@ -20,6 +20,21 @@
 
     <!-- <app-cascader></app-cascader> -->
 
+    <!-- <app-switch></app-switch> -->
+
+    <!-- <app-slider></app-slider> -->
+
+    <!-- <time-picker></time-picker> -->
+
+    <!-- <app-rate></app-rate> -->
+
+    <!-- <color-picker></color-picker> -->
+
+    <!-- <app-transfer></app-transfer> -->
+
+    <!-- <app-form></app-form> -->
+
+
     <!-- <time-picker></time-picker> -->
 
     <!-- <app-date-picker></app-date-picker> -->
@@ -48,6 +63,13 @@ import AppDatePicker from './components/DatePicker'
 import DateTimePicker from './components/DateTimePicker'
 import AppUpload from './components/Upload'
 import AppRate from './components/Rate'
+import AppSwitch from './components/Switch'
+import AppSlider from './components/Slider'
+import TimePicker from './components/TimePicker'
+import AppRate from './components/Rate'
+import ColorPicker from './components/ColorPicker'
+import AppTransfer from './components/Transfer'
+import AppForm from './components/Form'
 
 
 import Find from './components/Find'
@@ -71,6 +93,13 @@ export default {
     AppUpload: AppUpload,
     AppRate: AppRate,
 
+    AppSwitch: AppSwitch,
+    AppSlider: AppSlider,
+    TimePicker: TimePicker,
+    AppRate: AppRate,
+    ColorPicker: ColorPicker,
+    AppTransfer: AppTransfer,
+    AppForm: AppForm,
 
 
     appFind: Find

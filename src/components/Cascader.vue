@@ -23,6 +23,28 @@
                 <el-cascader change-on-select :options="options" v-model="selectedOptions5" @change="handleChange"></el-cascader>
             </el-col>
         </el-row>
+
+        <p>动态加载次级选项</p>
+        <el-row>
+            <el-cascader :options="options2" @active-item-change="handleItemChange" @change="handleChange" :props="props"></el-cascader>
+        </el-row>
+
+
+        <p>可搜索</p>
+
+        <el-row>
+            <el-col :span="12">
+                <p>只可选择最后一级菜单的选项</p>
+                <el-cascader :options="options" filterable></el-cascader>
+            </el-col>
+            <el-col :span="12">
+                <p>可选择任意一级菜单的选项</p>
+                <el-cascader clearable :options="options" change-on-select filterable></el-cascader>
+            </el-col>
+        </el-row>
+
+
+
     </div>
 </template>
 
@@ -63,16 +85,43 @@
                         ]}
                     ]}
 
-                ]
+                ],
+
+                options2: [
+                    {label:'江苏',cities:[]},
+                    {label:'浙江',cities:[]}
+                ],
+                props: {
+                    value:'label',
+                    children: 'cities'
+                }
             }
         },
 
         methods: {
             handleChange(value){
                 console.log(value)
+            },
+
+            handleItemChange(val){
+                console.log('active item:',val);
+                console.log(val[0])
+
+                console.log(!this.options2[0].cities.length)
+                setTimeout(_ =>{
+                    if(val.indexOf('江苏') > -1 && !this.options2[0].cities.length){
+                        this.options2[0].cities = [{
+                            label:'南京'
+                        }]
+                    }else if(val.indexOf('浙江')>-1 && !this.options2[1].cities.length){
+                        this.options2[1].cities = [{
+                            label: '杭州'
+                        }]
+                    }
+                },300)
             }
+
         }
-        
     }
 </script>
 
