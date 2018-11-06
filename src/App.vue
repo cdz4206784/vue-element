@@ -25,7 +25,7 @@
     <!-- <app-slider></app-slider> -->
 
     <!-- <time-picker></time-picker> -->
-    
+
     <!-- <app-date-picker></app-date-picker> -->
 
     <!-- <date-time-picker></date-time-picker> -->
@@ -38,7 +38,10 @@
 
     <!-- <app-transfer></app-transfer> -->
 
-    <app-form></app-form>
+    <!-- <app-form></app-form> -->
+
+    <app-table></app-table>
+
 
 
     <!-- 替换测试 -->
@@ -63,6 +66,9 @@ import AppSlider from "./components/Slider";
 import ColorPicker from "./components/ColorPicker";
 import AppTransfer from "./components/Transfer";
 import AppForm from "./components/Form";
+import AppTable from "./components/Table";
+
+
 
 import Find from "./components/Find";
 export default {
@@ -87,6 +93,7 @@ export default {
     ColorPicker: ColorPicker,
     AppTransfer: AppTransfer,
     AppForm: AppForm,
+    AppTable: AppTable,
 
     appFind: Find
   }
