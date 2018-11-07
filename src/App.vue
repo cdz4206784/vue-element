@@ -40,8 +40,9 @@
 
     <!-- <app-form></app-form> -->
 
-    <app-table></app-table>
+    <!-- <app-table></app-table> -->
 
+    <app-tag></app-tag>
 
 
     <!-- 替换测试 -->
@@ -50,27 +51,28 @@
 </template>
 
 <script>
-import Layout from "./components/Layout";
-import Container from "./components/Container";
-import AppInput from "./components/Input";
-import InputNumber from "./components/InputNumber";
-import AppSelect from "./components/Select";
-import AppCascader from "./components/Cascader";
-import TimePicker from "./components/TimePicker";
-import AppDatePicker from "./components/DatePicker";
-import DateTimePicker from "./components/DateTimePicker";
-import AppUpload from "./components/Upload";
-import AppRate from "./components/Rate";
-import AppSwitch from "./components/Switch";
-import AppSlider from "./components/Slider";
-import ColorPicker from "./components/ColorPicker";
-import AppTransfer from "./components/Transfer";
-import AppForm from "./components/Form";
-import AppTable from "./components/Table";
+import Layout from "./components/Layout"
+import Container from "./components/Container"
+import AppInput from "./components/Input"
+import InputNumber from "./components/InputNumber"
+import AppSelect from "./components/Select"
+import AppCascader from "./components/Cascader"
+import TimePicker from "./components/TimePicker"
+import AppDatePicker from "./components/DatePicker"
+import DateTimePicker from "./components/DateTimePicker"
+import AppUpload from "./components/Upload"
+import AppRate from "./components/Rate"
+import AppSwitch from "./components/Switch"
+import AppSlider from "./components/Slider"
+import ColorPicker from "./components/ColorPicker"
+import AppTransfer from "./components/Transfer"
+import AppForm from "./components/Form"
+import AppTable from "./components/Table"
+import AppTag from "./components/Tag"
 
 
 
-import Find from "./components/Find";
+// import Find from "./components/Find"
 export default {
   name: "App",
   data() {
@@ -94,8 +96,9 @@ export default {
     AppTransfer: AppTransfer,
     AppForm: AppForm,
     AppTable: AppTable,
+    AppTag: AppTag,
 
-    appFind: Find
+    // appFind: Find
   }
 };
 </script>
