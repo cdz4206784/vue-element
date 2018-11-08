@@ -42,7 +42,7 @@
 
     <!-- <app-table></app-table> -->
 
-    <app-tag></app-tag>
+    <!-- <app-tag></app-tag> -->
 
 
     <!-- 替换测试 -->
