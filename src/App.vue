@@ -44,6 +44,12 @@
 
     <!-- <app-tag></app-tag> -->
 
+    <app-progress></app-progress>
+
+
+
+
+
 
     <!-- 替换测试 -->
     <!-- <app-find></app-find> -->
@@ -69,6 +75,7 @@ import AppTransfer from "./components/Transfer"
 import AppForm from "./components/Form"
 import AppTable from "./components/Table"
 import AppTag from "./components/Tag"
+import AppProgress from "./components/Progress"
 
 
 
@@ -97,6 +104,7 @@ export default {
     AppForm: AppForm,
     AppTable: AppTable,
     AppTag: AppTag,
+    AppProgress: AppProgress,
 
     // appFind: Find
   }
