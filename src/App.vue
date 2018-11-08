@@ -44,9 +44,13 @@
 
     <!-- <app-tag></app-tag> -->
 
-    <app-progress></app-progress>
+    <!-- <app-progress></app-progress> -->
 
+    <!-- <app-pagination></app-pagination> -->
 
+    <!-- <app-badge></app-badge> -->
+
+    <app-tree></app-tree>
 
 
 
@@ -76,6 +80,9 @@ import AppForm from "./components/Form"
 import AppTable from "./components/Table"
 import AppTag from "./components/Tag"
 import AppProgress from "./components/Progress"
+import AppPagination from "./components/Pagination"
+import AppBadge from "./components/Badge"
+import AppTree from "./components/Tree"
 
 
 
@@ -105,6 +112,13 @@ export default {
     AppTable: AppTable,
     AppTag: AppTag,
     AppProgress: AppProgress,
+    AppPagination: AppPagination,
+    AppBadge: AppBadge,
+    AppTree: AppTree,
+
+
+
+
 
     // appFind: Find
   }
