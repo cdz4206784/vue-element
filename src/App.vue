@@ -50,8 +50,11 @@
 
     <!-- <app-badge></app-badge> -->
 
-    <app-tree></app-tree>
+    <!-- <app-tree></app-tree> -->
 
+    <!-- <app-message></app-message> -->
+
+    <app-notification></app-notification>
 
 
 
@@ -83,6 +86,8 @@ import AppProgress from "./components/Progress"
 import AppPagination from "./components/Pagination"
 import AppBadge from "./components/Badge"
 import AppTree from "./components/Tree"
+import AppMessage from "./components/Message"
+import AppNotification from "./components/Notification"
 
 
 
@@ -115,6 +120,8 @@ export default {
     AppPagination: AppPagination,
     AppBadge: AppBadge,
     AppTree: AppTree,
+    AppMessage: AppMessage,
+    AppNotification: AppNotification,
 
 
 
