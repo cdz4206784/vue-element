@@ -54,8 +54,9 @@
 
     <!-- <app-message></app-message> -->
 
-    <app-notification></app-notification>
+    <!-- <app-notification></app-notification> -->
 
+    <message-box></message-box>
 
 
     <!-- 替换测试 -->
@@ -88,6 +89,7 @@ import AppBadge from "./components/Badge"
 import AppTree from "./components/Tree"
 import AppMessage from "./components/Message"
 import AppNotification from "./components/Notification"
+import MessageBox from "./components/MessageBox"
 
 
 
@@ -122,6 +124,7 @@ export default {
     AppTree: AppTree,
     AppMessage: AppMessage,
     AppNotification: AppNotification,
+    MessageBox: MessageBox,
 
 
 
