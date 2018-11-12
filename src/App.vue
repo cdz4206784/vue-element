@@ -56,7 +56,30 @@
 
     <!-- <app-notification></app-notification> -->
 
-    <message-box></message-box>
+    <!-- <message-box></message-box> -->
+
+    <!-- <nav-menu></nav-menu> -->
+
+    <!-- <app-tabs></app-tabs> -->
+
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+    <!-- <app-dropdown></app-dropdown> -->
+
+    <!-- <app-steps></app-steps> -->
+
+    <!-- <app-dialog></app-dialog> -->
+
+    <!-- <tool-tip></tool-tip> -->
+
+    <!-- <app-popover></app-popover> -->
+
+    <!-- <app-card></app-card> -->
+
+    <!-- <app-carousel></app-carousel> -->
+
+    <app-collapse></app-collapse>
+
+
 
 
     <!-- 替换测试 -->
@@ -90,6 +113,17 @@ import AppTree from "./components/Tree"
 import AppMessage from "./components/Message"
 import AppNotification from "./components/Notification"
 import MessageBox from "./components/MessageBox"
+import NavMenu from "./components/NavMenu"
+import AppTabs from "./components/Tabs"
+import AppBreadcrumb from "./components/Breadcrumb"
+import AppDropdown from "./components/Dropdown"
+import AppSteps from "./components/Steps"
+import AppDialog from "./components/Dialog"
+import ToolTip from "./components/Tooltip"
+import AppPopover from "./components/Popover"
+import AppCard from "./components/Card"
+import AppCarousel from "./components/Carousel"
+import AppCollapse from "./components/Collapse"
 
 
 
@@ -125,6 +159,17 @@ export default {
     AppMessage: AppMessage,
     AppNotification: AppNotification,
     MessageBox: MessageBox,
+    NavMenu: NavMenu,
+    AppTabs: AppTabs,
+    AppBreadcrumb: AppBreadcrumb,
+    AppDropdown: AppDropdown,
+    AppSteps: AppSteps,
+    AppDialog: AppDialog,
+    ToolTip: ToolTip,
+    AppPopover: AppPopover,
+    AppCard: AppCard,
+    AppCarousel: AppCarousel,
+    AppCollapse: AppCollapse,
 
 
 
