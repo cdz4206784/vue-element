@@ -77,7 +77,14 @@
 
     <!-- <app-carousel></app-carousel> -->
 
-    <app-collapse></app-collapse>
+    <!-- <app-collapse></app-collapse> -->
+
+    <!-- <app-ref></app-ref> -->
+    <app-slot>
+       <p>父组件使用slot插入子组件</p>
+       <p slot="ceshi">具名插槽slot</p>
+       <p slot="ceshi2" slot-scope="props">1111 + {{props.sonTitle}}</p>
+    </app-slot>
 
 
 
@@ -124,6 +131,8 @@ import AppPopover from "./components/Popover"
 import AppCard from "./components/Card"
 import AppCarousel from "./components/Carousel"
 import AppCollapse from "./components/Collapse"
+import AppRef from "./components/Ref"
+import AppSlot from "./components/Slot"
 
 
 
@@ -170,6 +179,8 @@ export default {
     AppCard: AppCard,
     AppCarousel: AppCarousel,
     AppCollapse: AppCollapse,
+    AppRef: AppRef,
+    AppSlot: AppSlot,
 
 
 
