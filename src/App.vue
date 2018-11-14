@@ -80,13 +80,28 @@
     <!-- <app-collapse></app-collapse> -->
 
     <!-- <app-ref></app-ref> -->
-    <app-slot>
+
+    <!-- <app-slot>
        <p>父组件使用slot插入子组件</p>
        <p slot="ceshi">具名插槽slot</p>
        <p slot="ceshi2" slot-scope="props">1111 + {{props.sonTitle}}</p>
-    </app-slot>
+    </app-slot> -->
 
+    <search-filter v-bind:propsValue="authorName" v-bind:propsData="authorData">
+      <template slot-scope="props">
+        <input type="hidden" id="author" v-model="props.selectedValue" placeholder="子传父">
+      </template>
+    </search-filter>
+    <br>
+    <search-filter v-bind:propsValue="saleName" v-bind:propsData="saleData">
+      <template slot-scope="props">
+        <input type="hidden" id="salesman" v-model="props.selectedValue" placeholder="子传父">
+      </template>
+    </search-filter>
 
+    <br>
+
+    <button @click="getValue">获取子组件的值</button>
 
 
     <!-- 替换测试 -->
@@ -133,6 +148,7 @@ import AppCarousel from "./components/Carousel"
 import AppCollapse from "./components/Collapse"
 import AppRef from "./components/Ref"
 import AppSlot from "./components/Slot"
+import SearchFilter from "./components/SearchFilter"
 
 
 
@@ -140,7 +156,31 @@ import AppSlot from "./components/Slot"
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      authorName: '紫泥',
+      authorData: [
+        {id:'',name:'不选',pinyin:'', sx:''},
+        {id:123, name:'红泥', pinyin:'hongni',sx:'hn'},
+        {id:456, name:'紫泥', pinyin:'zini',sx:'zn'},
+        {id:789, name:'蓝泥', pinyin:'lanni',sx:'ln'},
+      ],
+
+      saleName: '唐僧',
+      saleData: [
+        {id:'',name:'不选',pinyin:'', sx:''},
+        {id:123, name:'乔峰', pinyin:'qiaofeng', sx:'qf'},
+        {id:456, name:'朱德', pinyin:'zhude', sx:'zd'},
+        {id:789, name:'唐僧', pinyin:'tangseng', sx:'ts'}
+      ]
+
+    };
+  },
+  methods: {
+    getValue:function(){
+      var author = document.getElementById("author").value;
+      var salesman = document.getElementById("salesman").value;
+      console.log(author,salesman)
+    }
   },
   components: {
     layoutDemo: Layout,
@@ -181,6 +221,7 @@ export default {
     AppCollapse: AppCollapse,
     AppRef: AppRef,
     AppSlot: AppSlot,
+    SearchFilter: SearchFilter,
 
 
 
